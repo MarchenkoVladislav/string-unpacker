@@ -3,6 +3,8 @@ package ru.marchenko.string.unpacker;
 import java.util.Scanner;
 
 /**
+ * Main class
+ *
  * @author Created by Vladislav Marchenko on 19.03.2021
  */
 public class Main {
@@ -12,7 +14,9 @@ public class Main {
 
         String str;
 
-        if (args[0] != null) {
+        // You can pass the input string through arguments,
+        // or you can type in the console
+        if (args.length > 0 && args[0] != null) {
             str = args[0];
         } else {
             System.out.println("Please, enter a string, that need to be unpacked:");
