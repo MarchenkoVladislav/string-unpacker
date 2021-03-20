@@ -92,7 +92,7 @@ class StringUnpackerTest {
                 STRING_UNPACKER.unpack(VALID_STRING_WITH_NESTED_REPEATS));
     }
 
-    @Test()
+    @Test
     void testUnpackInvalidStringWithInvalidSymbol() {
         InvalidStringFormatException exception = assertThrows(
                 InvalidStringFormatException.class,
@@ -102,7 +102,7 @@ class StringUnpackerTest {
         assertEquals(EXCEPTION_MSG_INVALID_STRING_WITH_INVALID_SYMBOL, exception.getMessage());
     }
 
-    @Test()
+    @Test
     void testUnpackInvalidStringWithInvalidBrackets() {
         InvalidStringFormatException exception = assertThrows(
                 InvalidStringFormatException.class,
@@ -112,7 +112,7 @@ class StringUnpackerTest {
         assertEquals(EXCEPTION_MSG_INVALID_STRING_WITH_INVALID_BRACKETS, exception.getMessage());
     }
 
-    @Test()
+    @Test
     void testUnpackInvalidStringWithInvalidRepeatsCount() {
         InvalidStringFormatException exception = assertThrows(
                 InvalidStringFormatException.class,
